@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/unpeou/Documents/GitHub/MiniApp002/javafx_sdk/**/*.jar"
+    ]
+}
