@@ -4,7 +4,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 
-public class Controller {
+public class controller {
 
     @FXML
     private Button bt1;
@@ -19,7 +19,7 @@ public class Controller {
     private ChoiceBox<?> cb3;
 
     @FXML
-    private Label result;
+    private Label label_result;
 
     @FXML
     void on_button(ActionEvent event) {
