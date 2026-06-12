@@ -19,11 +19,14 @@ public class controller {
     private ChoiceBox<?> cb3;
 
     @FXML
+    private Label clock;
+
+    @FXML
     private Label label_result;
 
     @FXML
     void on_button(ActionEvent event) {
-//
+
     }
     @FXML
     void initialize() {
