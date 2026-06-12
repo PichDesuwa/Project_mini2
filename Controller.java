@@ -25,5 +25,8 @@ public class controller {
     void on_button(ActionEvent event) {
 //
     }
+    @FXML
+    void initialize() {
+    }
 
 }
