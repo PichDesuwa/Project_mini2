@@ -62,9 +62,6 @@ public class controller {
 
     private void startCountdown() {
         timeLeft = 120;
-        if (timer != null) {
-            timer.stop();
-        }
         
         timer = new Timeline(new KeyFrame(Duration.seconds(1), event -> {
             timeLeft--;
