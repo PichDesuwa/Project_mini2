@@ -32,16 +32,21 @@ public class controller {
 
     @FXML
     void on_button(ActionEvent event) {
-        // Check if cb1 = static, cb2 = String[], cb3 = System
-        if (cb1.getValue() != null && cb2.getValue() != null && cb3.getValue() != null) {
-            if (cb1.getValue().equals("static") && 
-                cb2.getValue().equals("String[]") && 
-                cb3.getValue().equals("System")) {
-                label_result.setText("Correct");
-            } else {
-                label_result.setText("Incorrect");
-            }
+        int correctCount = 0;
+        
+        // Check each answer
+        if (cb1.getValue() != null && cb1.getValue().equals("static")) {
+            correctCount++;
         }
+        if (cb2.getValue() != null && cb2.getValue().equals("String[]")) {
+            correctCount++;
+        }
+        if (cb3.getValue() != null && cb3.getValue().equals("System")) {
+            correctCount++;
+        }
+        
+        // Display result
+        label_result.setText(correctCount + "/3 correct");
     }
 
     @FXML
