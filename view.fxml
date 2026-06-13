@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller">
    <children>
       <ImageView fitHeight="102.0" fitWidth="130.0" layoutX="11.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
@@ -32,7 +31,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="135.0" layoutY="138.0" prefHeight="124.0" prefWidth="369.0" text="   public class main{&#10;       public  static  void main ( String[] args){&#10;          system   .out.println(&quot;Hello world&quot;);&#10;   }">
+      <Label layoutX="135.0" layoutY="140.0" prefHeight="124.0" prefWidth="369.0" style="-fx-border-color: black;" text="   public class main{&#10;       public  static  void main ( String[] args){&#10;          system   .out.println(&quot;Hello world&quot;);&#10;   }">
          <font>
             <Font size="18.0" />
          </font>
@@ -45,5 +44,8 @@
             <Font size="24.0" />
          </font>
       </Label>
+      <Label layoutX="11.0" layoutY="119.0" prefHeight="25.0" prefWidth="110.0" text="Duration: 2mn" />
+      <Label layoutX="11.0" layoutY="144.0" prefHeight="25.0" prefWidth="52.0" text="Timmer:" />
+      <Label fx:id="clock" layoutX="57.0" layoutY="144.0" prefHeight="25.0" prefWidth="52.0" text="120s" />
    </children>
 </Pane>
