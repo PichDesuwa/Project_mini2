@@ -51,12 +51,10 @@ public class controller {
 
     @FXML
     void initialize() {
-        // Initialize comboboxes with choices
         cb1.getItems().addAll("static", "String[]", "System");
         cb2.getItems().addAll("static", "String[]", "System");
         cb3.getItems().addAll("static", "String[]", "System");
 
-        // Initialize countdown timer
         startCountdown();
     }
 
@@ -67,7 +65,6 @@ public class controller {
             timeLeft--;
             clock.setText(timeLeft + "s");
             
-            // Auto submit when time reaches 0
             if (timeLeft <= 0) {
                 timer.stop();
                 on_button(null);
